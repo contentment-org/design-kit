@@ -6,7 +6,8 @@
         "targets": {
           "browsers": ["last 2 versions", "safari >= 7"]
         },
-        "loose": true
+        "loose": true,
+        "modules": false
       }
     ],
     "@babel/react"
@@ -15,6 +16,6 @@
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-transform-spread",
     "@babel/plugin-proposal-export-default-from",
-    "babel-plugin-styled-components"
+    "styled-components"
   ]
 }

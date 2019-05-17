@@ -1,20 +1,23 @@
-import React from "react";
-import { configure } from "@storybook/react";
-import { setOptions } from "@storybook/addon-options";
+import React from 'react';
+import { configure, addDecorator } from '@storybook/react';
+import { setOptions } from '@storybook/addon-options';
+import { withKnobs } from '@storybook/addon-knobs';
 
 setOptions({
-  name: "contentment.org",
-  url: "https://github.com/contentment-org/design-kit",
+  name: 'contentment.org',
+  url: 'https://github.com/contentment-org/design-kit',
   goFullScreen: false,
   showLeftPanel: true,
   showDownPanel: true,
-  showSearchBox: false,
-  downPanelInRight: false
+  showSearchBox: true,
+  downPanelInRight: true,
 });
 
+const req = require.context('../lib', true, /\.stories\.js$/);
+
 function loadStories() {
-  const req = require.context("../lib", true, /[a-zA-Z0-9]\-story\.js$/);
   req.keys().forEach(filename => req(filename));
 }
 
+addDecorator(withKnobs);
 configure(loadStories, module);

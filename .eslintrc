@@ -9,6 +9,7 @@
   "parser": "babel-eslint",
   "rules": {
     "prettier/prettier": "error",
+    "import/no-extraneous-dependencies": 0,
     "indent": 0,
     "no-tabs": 0,
     "no-underscore-dangle": 0,
