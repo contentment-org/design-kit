@@ -20,7 +20,6 @@
   },
   "author": "Lakhan Samani <lakhan.m.samani@gmail.com>",
   "license": "MIT",
-  "private": true,
   "lint-staged": {
     "src/*.js": [
       "eslint"
