@@ -1,0 +1,66 @@
+{
+  "name": "@contentment-org/design-kit",
+  "version": "1.0.0",
+  "description": "Design kit for contentment.org ecosystem",
+  "main": "lib/index.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run watch\" \"npm run storybook\"",
+    "watch": "babel src --out-dir lib --watch",
+    "lint": "eslint .",
+    "precommit": "lint-staged",
+    "build": "babel src --out-dir lib",
+    "storybook": "start-storybook -p 9001 -s ./static -c .storybook",
+    "build-storybook": "build-storybook -c .storybook -o .out",
+    "deploy-storybook": "storybook-to-ghpages",
+    "prepublishOnly": "yarn run build",
+    "format": "prettier --write 'src/**/*.{js,jsx,json}'"
+  },
+  "author": "Lakhan Samani <lakhan.m.samani@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "lint-staged": {
+    "src/*.js": [
+      "eslint"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-transform-spread": "^7.2.2",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-info": "^5.0.11",
+    "@storybook/addon-knobs": "^5.0.11",
+    "@storybook/addon-options": "^5.0.11",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "concurrently": "^4.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "storybook-readme": "^5.0.3",
+    "styled-components": "^4.2.0"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "styled-components": "^4.2.0"
+  }
+}
