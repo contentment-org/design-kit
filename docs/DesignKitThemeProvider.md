@@ -1,6 +1,6 @@
 # DesignKitThemeProvider
 
-This is the root level theme provider component which can pass theme to its child component using `withTheme` higher order component from `styled-components`.
+This is the root level theme provider component which can pass theme to its child component using `withTheme` higher order component from `styled-components`. You can also check storybook playground [here](https://contentment-org.github.io/design-kit/?path=/story/designkitthemeprovider--default)
 
 ## Sample
 

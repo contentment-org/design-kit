@@ -3,6 +3,7 @@
 ## Components
 
 - [DesignKitThemeProvider](DesignKitThemeProvider.md)
+- [Flex](Flex.md)
 
 ## Utils
 
