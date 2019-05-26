@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { string, boolean } from 'prop-types';
+import { string, bool } from 'prop-types';
 import mediaQueries from '../../media-queries';
 
 const Flex = styled.div`
@@ -29,7 +29,7 @@ Flex.propTypes = {
   flexDirection: string,
   justifyContent: string,
   wrap: string,
-  isResponsive: boolean,
+  isResponsive: bool,
 };
 
 Flex.defaultProps = {
