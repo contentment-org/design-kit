@@ -17,6 +17,7 @@ const defaultTheme = {
   secondaryColor: '#0190be',
   whiteColor: '#fff',
   borderColor: '#f1f1f1',
+  bodyBackground: '#f2f7fb',
   mindfulness: '#54bf97',
   community: '#2fc0ce',
   selfCuriosity: '#5e75b9',
