@@ -1,6 +1,6 @@
 # Design Kit
 
-Design kit for contentment foundation. You can find documentation about various components and utils [here](docs/README.md).
+Design kit for contentment foundation. You can find documentation about various components and utils [here](https://github.com/contentment-org/design-kit/blob/master/docs/README.md).
 
 You can test existing components with their props [here](https://contentment-org.github.io/design-kit)
 
