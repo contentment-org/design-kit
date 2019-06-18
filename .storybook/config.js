@@ -5,7 +5,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import './style.css';
 
 setOptions({
-  name: 'contentment.org',
+  name: 'contentment.org-design-kit',
   url: 'https://github.com/contentment-org/design-kit',
   goFullScreen: false,
   showLeftPanel: true,
