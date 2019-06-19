@@ -161,7 +161,7 @@ class NavBar extends React.Component {
           onClose={this.toggleDrawer}
           visible={isDrawerOpen}
           closable
-          title={<Logo height={38} />}
+          title={logo}
         >
           <MobileMenuContainer>
             {menuItems &&
