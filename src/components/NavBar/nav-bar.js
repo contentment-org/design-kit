@@ -136,13 +136,15 @@ class NavBar extends React.Component {
             </Flex>
             <Flex alignItems="center">
               <WebMenuContainer alignItems="center">
-                {menuItems.map(item => (
-                  <MenuItemWrapper key={item.key} isActive={item.isActive}>
-                    {item.renderItem}
-                  </MenuItemWrapper>
-                ))}
+                {menuItems &&
+                  menuItems.length &&
+                  menuItems.map(item => (
+                    <MenuItemWrapper key={item.key} isActive={item.isActive}>
+                      {item.renderItem}
+                    </MenuItemWrapper>
+                  ))}
               </WebMenuContainer>
-              {menuItems.length && (notification || userMenu) && (
+              {menuItems && menuItems.length && (notification || userMenu) && (
                 <StyledDivider type="vertical" style={{ height: 30 }} />
               )}
               <Flex alignItems="center">
@@ -162,11 +164,13 @@ class NavBar extends React.Component {
           title={<Logo height={38} />}
         >
           <MobileMenuContainer>
-            {menuItems.map(item => (
-              <MenuItemWrapper key={item.key} isActive={item.isActive}>
-                {item.renderItem}
-              </MenuItemWrapper>
-            ))}
+            {menuItems &&
+              menuItems.length &&
+              menuItems.map(item => (
+                <MenuItemWrapper key={item.key} isActive={item.isActive}>
+                  {item.renderItem}
+                </MenuItemWrapper>
+              ))}
           </MobileMenuContainer>
         </StyledDrawer>
       </>
