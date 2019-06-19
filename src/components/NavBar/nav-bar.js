@@ -53,6 +53,10 @@ const MenuItemWrapper = styled(Flex)`
   ${mediaQueries.media.lg`
     padding: 0px 20px;
   `};
+
+  a {
+    color: ${props => props.theme.fontColor};
+  }
 `;
 
 const OtherItemWrapper = styled(Flex)`

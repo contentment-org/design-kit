@@ -36,6 +36,7 @@ const defaultTheme = {
     'rgba(231, 233, 237, .6)',
   ],
   hrColor: '#d0d0d0',
+  fontColor: 'rgba(0,0,0,.65)',
 
   // border radius
   cardBorderRadius: '3px',
