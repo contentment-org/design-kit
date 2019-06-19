@@ -124,7 +124,11 @@ class NavBar extends React.Component {
         <StyledHeader>
           <Flex justifyContent="space-between">
             <Flex alignItems="center">
-              <Trigger className="trigger" onClick={this.toggleDrawer}>
+              <Trigger
+                className="trigger"
+                onClick={this.toggleDrawer}
+                viewBox="0 0 100 100"
+              >
                 <MenuIcon
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 100 100"

@@ -1,7 +1,19 @@
 const defaultTheme = {
   // font family
-  componentFontFamily: 'Varela Regular, sans-serif',
-  labelFontFamily: 'Open Sans, sans-serif',
+  varelaRegular: 'Varela Regular, Helvetica Neue, sans-serif',
+  openSansBold: 'Open Sans Bold, Helvetica Neue, sans-serif',
+  openSansBoldItalic: 'Open Sans BoldItalic, Helvetica Neue, sans-serif',
+  openSansExtraBold: 'Open Sans ExtraBold, Helvetica Neue, sans-serif',
+  openSansExtraBoldItalic:
+    'Open Sans ExtraBoldItalic, Helvetica Neue, sans-serif',
+  openSansItalic: 'Open Sans Italic, Helvetica Neue, sans-serif',
+  openSansLight: 'Open Sans Light, Helvetica Neue, sans-serif',
+  openSansLightItalic: 'Open Sans LightItalic, Helvetica Neue, sans-serif',
+  openSansRegular: 'Open Sans Regular, Helvetica Neue, sans-serif',
+  openSansSemiBold: 'Open Sans Semibold, Helvetica Neue, sans-serif',
+  openSansSemiBoldItalic:
+    'Open Sans SemiboldItalic, Helvetica Neue, sans-serif',
+  opticianSans: 'Optician Sans, Helvetica Neue, sans-serif',
 
   // font sizes
   fontSizeRegular: '15px',
