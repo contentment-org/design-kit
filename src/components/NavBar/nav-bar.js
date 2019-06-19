@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Layout, Divider, Drawer, Icon } from 'antd';
+import { Layout, Divider, Drawer } from 'antd';
 import styled from 'styled-components';
+import IconHamburger from '@contentment-org/icons/ic-hamburger';
 import mediaQueries from '../../media-queries';
 
 import Flex from '../Flex';
@@ -16,15 +17,6 @@ const StyledDrawer = styled(Drawer)`
   .ant-drawer-header {
     height: 64px;
   }
-`;
-
-const Trigger = styled(Icon)`
-  cursor: pointer;
-  font-size: ${props => props.theme.fontSizeSmallTitle};
-  margin-right: 20px;
-  ${mediaQueries.media.lg`
-    display: none !important;
- `}
 `;
 
 const WebMenuContainer = styled(Flex)`
@@ -42,6 +34,7 @@ const MobileMenuContainer = styled(Flex)`
 `;
 
 const MenuItemWrapper = styled(Flex)`
+  font-family: ${props => props.theme.varelaRegular};
   margin: 0;
   padding: 20px 0px;
   white-space: nowrap;
@@ -57,6 +50,7 @@ const MenuItemWrapper = styled(Flex)`
   a {
     color: ${props =>
       props.isActive ? props.theme.primaryColor : props.theme.fontColor};
+    font-family: ${props => props.theme.varelaRegular};
   }
 `;
 
@@ -85,13 +79,11 @@ const StyledHeader = styled(Header)`
   padding-left: 20px;
 `;
 
-const MenuIcon = styled.svg`
+const MenuIcon = styled(IconHamburger)`
   position: relative;
-  max-width: 5.5rem;
-  max-height: 4.125rem;
-  width: 100%;
-  height: 100%;
   display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
   path {
     stroke: #363636;
     stroke-width: 5;
@@ -124,23 +116,7 @@ class NavBar extends React.Component {
         <StyledHeader>
           <Flex justifyContent="space-between">
             <Flex alignItems="center">
-              <Trigger
-                className="trigger"
-                onClick={this.toggleDrawer}
-                viewBox="0 0 100 100"
-              >
-                <MenuIcon
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 100 100"
-                >
-                  <g fill="none" fillRule="evenodd" stroke="#979797">
-                    <path d="M13,26.5 L88,26.5" />
-                    <path d="M13,50.5 L88,50.5" />
-                    <path d="M13,50.5 L88,50.5" />
-                    <path d="M13,74.5 L88,74.5" />
-                  </g>
-                </MenuIcon>
-              </Trigger>
+              <MenuIcon onClick={this.toggleDrawer} />
               {logo}
             </Flex>
             <Flex alignItems="center">

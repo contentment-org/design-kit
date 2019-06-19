@@ -33,6 +33,7 @@
     "@babel/plugin-transform-spread": "^7.2.2",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
+    "@contentment-org/icons": "^1.0.2",
     "@storybook/addon-info": "^5.0.11",
     "@storybook/addon-knobs": "^5.0.11",
     "@storybook/addon-options": "^5.0.11",
@@ -61,6 +62,7 @@
     "styled-components": "^4.2.0"
   },
   "peerDependencies": {
+    "@contentment-org/icons": "^1.0.2",
     "antd": "^3.19.5",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
