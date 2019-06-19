@@ -84,6 +84,9 @@ const MenuIcon = styled(IconHamburger)`
   display: inline-block;
   margin-right: 20px;
   cursor: pointer;
+  ${mediaQueries.media.lg`
+    display: none;
+  `}
   path {
     stroke: #363636;
     stroke-width: 5;
