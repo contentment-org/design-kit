@@ -55,7 +55,8 @@ const MenuItemWrapper = styled(Flex)`
   `};
 
   a {
-    color: ${props => props.theme.fontColor};
+    color: ${props =>
+      props.isActive ? props.theme.primaryColor : props.theme.fontColor};
   }
 `;
 
