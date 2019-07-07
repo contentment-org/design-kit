@@ -1,6 +1,6 @@
 {
   "name": "@contentment-org/design-kit",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Design kit for contentment.org ecosystem",
   "main": "lib/index.js",
   "files": [
