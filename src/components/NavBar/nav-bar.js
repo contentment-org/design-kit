@@ -39,9 +39,9 @@ const MenuItemWrapper = styled(Flex)`
   padding: 20px 0px;
   white-space: nowrap;
   cursor: pointer;
-  color: ${props => props.isActive && props.theme.primaryColor};
+  color: ${props => props.isActive && props.theme.secondaryColor};
   &: hover {
-    color: ${props => props.theme.primaryColor};
+    color: ${props => props.theme.secondaryColor};
   }
   ${mediaQueries.media.lg`
     padding: 0px 20px;
@@ -49,7 +49,7 @@ const MenuItemWrapper = styled(Flex)`
 
   a {
     color: ${props =>
-      props.isActive ? props.theme.primaryColor : props.theme.fontColor};
+      props.isActive ? props.theme.secondaryColor : props.theme.fontColor};
     font-family: ${props => props.theme.varelaRegular};
   }
 `;
@@ -57,7 +57,7 @@ const MenuItemWrapper = styled(Flex)`
 const OtherItemWrapper = styled(Flex)`
   padding: 0 20px;
   &: hover {
-    color: ${props => props.theme.primaryColor};
+    color: ${props => props.theme.secondaryColor};
   }
 `;
 
