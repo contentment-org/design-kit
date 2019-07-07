@@ -28,6 +28,7 @@ const defaultTheme = {
   // colors
   primaryColor: '#ff6347',
   secondaryColor: '#0190be',
+  subTitle: '#818D96',
   whiteColor: '#fff',
   borderColor: '#f1f1f1',
   bodyBackground: '#f2f7fb',
