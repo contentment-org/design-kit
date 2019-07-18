@@ -51,6 +51,8 @@ const defaultTheme = {
   ],
   hrColor: '#d0d0d0',
   fontColor: 'rgba(0,0,0,.65)',
+  inactiveBackground: '#818d96ad',
+  inactiveText: '#a2a2a2',
 
   // border radius
   cardBorderRadius: '3px',
