@@ -70,7 +70,7 @@ const StyledDivider = styled(Divider)`
 
 const StyledHeader = styled(Header)`
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   background: ${props => props.theme.whiteColor};
   border-bottom: 1px solid ${props => props.theme.borderColor};
