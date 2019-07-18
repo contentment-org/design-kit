@@ -112,7 +112,7 @@ class NavBar extends React.Component {
   };
 
   render() {
-    const { logo, menuItems, notification, userMenu } = this.props;
+    const { logo, menuItems, notification, userMenu, habbitMenu } = this.props;
     const { isDrawerOpen } = this.state;
     return (
       <>
@@ -138,6 +138,9 @@ class NavBar extends React.Component {
               <Flex alignItems="center">
                 {notification && (
                   <OtherItemWrapper>{notification}</OtherItemWrapper>
+                )}
+                {habbitMenu && (
+                  <OtherItemWrapper>{habbitMenu}</OtherItemWrapper>
                 )}
                 {userMenu && <OtherItemWrapper>{userMenu}</OtherItemWrapper>}
               </Flex>
